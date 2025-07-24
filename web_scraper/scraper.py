@@ -1,21 +1,22 @@
 import json
-import csv
 import time
+import os
 import requests
 from bs4 import BeautifulSoup
+from urllib.parse import urljoin, urlparse
 
-# 1. Charger les URLs depuis le fichier JSON
+# 🔹 Charger les URLs depuis un fichier JSON
 
 
 def load_urls(filename):
-    with open(filename, 'r') as file:
+    with open(filename, 'r', encoding='utf-8') as file:
         data = json.load(file)
         return [entry["url"] for entry in data]
 
-# 2. Scraper une page HTML
+# 🔹 Scraper une page HTML
 
 
-def scrape_page(url):
+def scrape_page(url, image_folder="images"):
     try:
         response = requests.get(url, timeout=10)
         if response.status_code != 200:
@@ -23,43 +24,69 @@ def scrape_page(url):
             return None
 
         soup = BeautifulSoup(response.text, 'html.parser')
-
-        # Titre
         title = soup.title.string.strip() if soup.title else "Sans titre"
 
-        # Texte dans les balises h1, h2, p
-        headers = [h.get_text(strip=True) for h in soup.find_all(['h1', 'h2'])]
-        paragraphs = [p.get_text(strip=True) for p in soup.find_all('p')]
+        # 🔸 Associer chaque <h1>/<h2> à son <p> suivant
+        content = []
+        for tag in soup.find_all(['h1', 'h2']):
+            header_text = tag.get_text(strip=True)
+            next_p = tag.find_next_sibling()
+            while next_p and next_p.name != 'p':
+                next_p = next_p.find_next_sibling()
+            if next_p:
+                paragraph_text = next_p.get_text(strip=True)
+                content.append({
+                    "header": header_text,
+                    "paragraph": paragraph_text
+                })
+
+        # 🔸 Récupérer les images
+        img_tags = soup.find_all('img')
+        img_urls = []
+
+        domain = urlparse(url).netloc.replace(".", "_")
+        page_folder = os.path.join(image_folder, domain)
+        os.makedirs(page_folder, exist_ok=True)
+
+        for img in img_tags:
+            src = img.get('src')
+            if src:
+                full_url = urljoin(url, src)
+                img_urls.append(full_url)
+
+                try:
+                    img_data = requests.get(full_url, timeout=10).content
+                    img_name = os.path.basename(full_url.split("?")[0])
+                    img_path = os.path.join(page_folder, img_name)
+                    with open(img_path, 'wb') as f:
+                        f.write(img_data)
+                except Exception as e:
+                    print(f"❌ Erreur image {full_url} : {e}")
 
         return {
             "url": url,
             "title": title,
-            "headers": " | ".join(headers),
-            "paragraphs": " | ".join(paragraphs)
+            "content": content,
+            "images": img_urls
         }
 
     except Exception as e:
-        print(f"❌ Erreur lors du scraping de {url} : {e}")
+        print(f"❌ Erreur scraping {url} : {e}")
         return None
 
-# 3. Sauvegarder les résultats dans un CSV
+# 🔹 Sauvegarde au format JSON
 
 
-def save_to_csv(data, filename="scraped_content.csv"):
-    with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ["url", "title", "headers", "paragraphs"]
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
-        for row in data:
-            if row:
-                writer.writerow(row)
+def save_to_json(data, filename="scraped_content.json"):
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
 
-# 4. Exécution principale
+# 🔹 Fonction principale
 
 
 def main():
     urls = load_urls("soussanahotel_links.json")
-    print(f"📥 {len(urls)} URLs à scraper.")
+    print(f"📥 {len(urls)} URLs à scraper.\n")
 
     scraped_data = []
     for i, url in enumerate(urls, start=1):
@@ -67,11 +94,12 @@ def main():
         result = scrape_page(url)
         if result:
             scraped_data.append(result)
-        time.sleep(1)  # ⏱️ Pause pour éviter de surcharger le site
+        time.sleep(1)  # Pour éviter de surcharger le site
 
-    save_to_csv(scraped_data)
-    print("✅ Scraping terminé. Résultats enregistrés dans scraped_content.csv")
+    save_to_json(scraped_data)
+    print("\n✅ Scraping terminé. Résultats enregistrés dans scraped_content.json")
 
 
+# 🔹 Lancer le script
 if __name__ == "__main__":
     main()
