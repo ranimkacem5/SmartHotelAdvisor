@@ -1,0 +1,127 @@
+[
+    {
+        "url": "https://www.soussanahotel.com/about-us.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/attractions.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/contact-us.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/gallery.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/404.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/book-now.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/rooms/double-room.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/rooms/family-room.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/rooms/single-room.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/rooms/triple-room.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/rooms.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/83497cd1-b598-418d-97cc-5c7f60f98048.jpg?auto=format,compress&w=300&h=300&q=55",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/about-us.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/attractions.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/contact-us.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/gallery.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/index.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/404.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/book-now.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/rooms/chambre-double.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/rooms/chambre-familiale.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/rooms/chambre-single.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/rooms/chambre-triple.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    },
+    {
+        "url": "https://www.soussanahotel.com/fr/rooms.html",
+        "frequency": "weekly",
+        "priority": 0.5
+    }
+]
