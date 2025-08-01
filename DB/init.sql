@@ -20,6 +20,12 @@ CREATE TABLE rooms (
     is_available BOOLEAN DEFAULT TRUE
 );
 
+CREATE TABLE room_images (
+    id SERIAL PRIMARY KEY,
+    room_id INT REFERENCES rooms(id) ON DELETE CASCADE,
+    image_url TEXT NOT NULL
+);
+
 -- Réservations
 CREATE TABLE reservations (
     id SERIAL PRIMARY KEY,

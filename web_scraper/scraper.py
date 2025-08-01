@@ -5,6 +5,9 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 
+from unidecode import unidecode
+
+
 # 🔹 Charger les URLs depuis un fichier JSON
 
 
@@ -26,19 +29,23 @@ def scrape_page(url, image_folder="images"):
         soup = BeautifulSoup(response.text, 'html.parser')
         title = soup.title.string.strip() if soup.title else "Sans titre"
 
-        # 🔸 Associer chaque <h1>/<h2> à son <p> suivant
+        # 🔸 Associer chaque <h1>/<h2> à un <p> même dans des divs
         content = []
         for tag in soup.find_all(['h1', 'h2']):
             header_text = tag.get_text(strip=True)
-            next_p = tag.find_next_sibling()
-            while next_p and next_p.name != 'p':
-                next_p = next_p.find_next_sibling()
-            if next_p:
-                paragraph_text = next_p.get_text(strip=True)
-                content.append({
-                    "header": header_text,
-                    "paragraph": paragraph_text
-                })
+
+            # Chercher le <p> suivant dans le flux HTML
+            next_element = tag.find_next()
+            while next_element and next_element != tag:
+                if next_element.name == 'p':
+                    paragraph_text = next_element.get_text(strip=True)
+                    if paragraph_text:  # ignorer les <p> vides
+                        content.append({
+                            "header": header_text,
+                            "paragraph": paragraph_text
+                        })
+                        break
+                next_element = next_element.find_next()
 
         # 🔸 Récupérer les images
         img_tags = soup.find_all('img')
@@ -84,6 +91,63 @@ def save_to_json(data, filename="scraped_content.json"):
 # 🔹 Fonction principale
 
 
+def clean_text(text):
+    """Corrige l'encodage et supprime espaces inutiles."""
+    text = unidecode(text)  # enlève les caractères mal encodés
+    text = text.replace("  ", " ")  # supprime espaces doublons
+    return text.strip()
+
+
+def process_json(raw_data):
+    """Nettoie et restructure le JSON brut en format Python-ready."""
+    documents = []
+    id_counter = 1
+
+    for item in raw_data:
+        url = item.get("url")
+        title = clean_text(item.get("title", ""))
+        images = item.get("images", [])
+
+        # 🟢 Nettoyer paragraphes et supprimer doublons
+        paragraphs = []
+        seen = set()
+        for c in item.get("content", []):
+            p = clean_text(c.get("paragraph", ""))
+            if p and p not in seen:
+                paragraphs.append(p)
+                seen.add(p)
+
+        # 🟢 Fusionner paragraphes
+        full_text = " ".join(paragraphs)
+
+        # 🟢 Déterminer la catégorie depuis le titre (single, double, triple)
+        category = "other"
+        if "single" in title.lower():
+            category = "single"
+        elif "double" in title.lower():
+            category = "double"
+        elif "triple" in title.lower():
+            category = "triple"
+        elif "family" in title.lower():
+            category = "family"
+
+        # 🟢 Ajouter document nettoyé
+        documents.append({
+            "id": f"room_{category}_{id_counter}",
+            "title": title,
+            "text": full_text,
+            "url": url,
+            "category": category,
+            "images": images
+        })
+        id_counter += 1
+
+    return documents
+
+
+# Lire ton JSON brut
+
+
 def main():
     urls = load_urls("soussanahotel_links.json")
     print(f"📥 {len(urls)} URLs à scraper.\n")
@@ -94,12 +158,21 @@ def main():
         result = scrape_page(url)
         if result:
             scraped_data.append(result)
-        time.sleep(1)  # Pour éviter de surcharger le site
+        time.sleep(1)  # Pause pour éviter de surcharger le site
 
     save_to_json(scraped_data)
     print("\n✅ Scraping terminé. Résultats enregistrés dans scraped_content.json")
 
 
+with open("scraped_content.json", "r", encoding="utf-8") as f:
+    raw_data = json.load(f)
+
+# Nettoyer et restructurer
+cleaned_docs = process_json(raw_data)
+
+# Sauvegarder le JSON prêt pour RAG
+with open("clean_data.json", "w", encoding="utf-8") as f:
+    json.dump(cleaned_docs, f, indent=2, ensure_ascii=False)
 # 🔹 Lancer le script
 if __name__ == "__main__":
     main()
