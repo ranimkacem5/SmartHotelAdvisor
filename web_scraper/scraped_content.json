@@ -15,21 +15,6 @@
         "images": []
     },
     {
-        "url": "https://www.soussanahotel.com/attractions.html",
-        "title": "Attractions | HÃ´tel SOUSSANA (Tunis, Sousse)",
-        "content": [
-            {
-                "header": "Contact Us",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            },
-            {
-                "header": "Attractions",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            }
-        ],
-        "images": []
-    },
-    {
         "url": "https://www.soussanahotel.com/contact-us.html",
         "title": "Contact Us | HÃ´tel SOUSSANA (Tunis, Sousse)",
         "content": [
@@ -53,41 +38,6 @@
         "images": []
     },
     {
-        "url": "https://www.soussanahotel.com/gallery.html",
-        "title": "Gallery | HÃ´tel SOUSSANA (Tunis, Sousse)",
-        "content": [
-            {
-                "header": "Contact Us",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            },
-            {
-                "header": "Gallery",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            }
-        ],
-        "images": [
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/d14da32f-23ad-4b01-b865-e8ea8229facb.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/681769ff-0c6c-4947-bdc1-c17621f3c117.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/bfe2f196-fad4-4874-a61b-a4ea35bff284.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/fa1b2dfe-bab8-448e-9486-f53a27a5dc56.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/b97a3457-aaf9-49d5-b13e-e4c290a99859.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/5e96f818-458b-46e0-b5e5-a7a3da1879a4.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/95587992-ed5b-4994-842b-d39d7ccc169c.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/0b39f1be-8fb2-43ac-abf4-904907bb028a.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/bc4c48d3-bf87-43ef-9826-b42108750a6b.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/a627ec81-6f1f-49f0-a9b5-6c943fdc6c27.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/d491472e-3973-4b7e-8561-14db600ee203.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/34d8f5cb-bf2b-4ad7-837d-0f5d4838115e.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/fe202313-4df2-41af-a2ba-d91f34d96173.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/cd5d5515-032a-4e31-8a2e-5459e55e6881.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/ba61e79e-5c53-4e61-9b90-48fdb13c8ffe.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/48df1a51-ed39-4bf2-90e1-d7d71a8007a0.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/6a4847ed-ed22-4454-ac99-3eddf8e79b80.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/26db1db7-05dc-4227-8c3c-bf502220f220.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/927e5bdb-5f96-45e7-96a0-375b1b2d4724.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600"
-        ]
-    },
-    {
         "url": "https://www.soussanahotel.com",
         "title": "Home | HÃ´tel SOUSSANA (Tunis, Sousse)",
         "content": [
@@ -109,21 +59,6 @@
             "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/a627ec81-6f1f-49f0-a9b5-6c943fdc6c27.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
             "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/d491472e-3973-4b7e-8561-14db600ee203.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600"
         ]
-    },
-    {
-        "url": "https://www.soussanahotel.com/404.html",
-        "title": "Sorry, Page Not Found | HÃ´tel SOUSSANA (Tunis, Sousse)",
-        "content": [
-            {
-                "header": "Contact Us",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            },
-            {
-                "header": "Sorry, Page Not Found",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            }
-        ],
-        "images": []
     },
     {
         "url": "https://www.soussanahotel.com/book-now.html",
@@ -238,102 +173,6 @@
         ]
     },
     {
-        "url": "https://www.soussanahotel.com/rooms.html",
-        "title": "Rooms | HÃ´tel SOUSSANA (Tunis, Sousse)",
-        "content": [
-            {
-                "header": "Contact Us",
-                "paragraph": "This air-conditioned double room features a flat-screen TV with satellite channels, a private bathroom and a terrace with sea views."
-            },
-            {
-                "header": "Rooms",
-                "paragraph": "This air-conditioned double room features a flat-screen TV with satellite channels, a private bathroom and a terrace with sea views."
-            },
-            {
-                "header": "double room",
-                "paragraph": "This air-conditioned double room features a flat-screen TV with satellite channels, a private bathroom and a terrace with sea views."
-            },
-            {
-                "header": "family room",
-                "paragraph": "This air-conditioned family room features a flat-screen TV with satellite channels, a private bathroom and a balcony with city views."
-            },
-            {
-                "header": "single room",
-                "paragraph": "This air-conditioned single room features a flat-screen TV with satellite channels, a private bathroom and a terrace with city views."
-            },
-            {
-                "header": "triple room",
-                "paragraph": "This air-conditioned triple room features a flat-screen TV with satellite channels, a private bathroom and a terrace with city views."
-            }
-        ],
-        "images": [
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/5e96f818-458b-46e0-b5e5-a7a3da1879a4.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/a627ec81-6f1f-49f0-a9b5-6c943fdc6c27.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/95587992-ed5b-4994-842b-d39d7ccc169c.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/0b39f1be-8fb2-43ac-abf4-904907bb028a.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/34d8f5cb-bf2b-4ad7-837d-0f5d4838115e.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/a627ec81-6f1f-49f0-a9b5-6c943fdc6c27.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/34d8f5cb-bf2b-4ad7-837d-0f5d4838115e.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/5e96f818-458b-46e0-b5e5-a7a3da1879a4.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/d491472e-3973-4b7e-8561-14db600ee203.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/34d8f5cb-bf2b-4ad7-837d-0f5d4838115e.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450",
-            "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/bc4c48d3-bf87-43ef-9826-b42108750a6b.jpg?auto=format,compress&fit=crop&crop=entropy&w=600&h=450"
-        ]
-    },
-    {
-        "url": "https://www.soussanahotel.com/fr/about-us.html",
-        "title": "Ã propos de nous | HÃ´tel SOUSSANA (Tunis, Sousse)",
-        "content": [
-            {
-                "header": "Contactez-nous",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            },
-            {
-                "header": "Ã propos de nous",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            }
-        ],
-        "images": []
-    },
-    {
-        "url": "https://www.soussanahotel.com/fr/attractions.html",
-        "title": "Attractions | HÃ´tel SOUSSANA (Tunis, Sousse)",
-        "content": [
-            {
-                "header": "Contactez-nous",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            },
-            {
-                "header": "Attractions",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            }
-        ],
-        "images": []
-    },
-    {
-        "url": "https://www.soussanahotel.com/fr/contact-us.html",
-        "title": "Contactez-nous | HÃ´tel SOUSSANA (Tunis, Sousse)",
-        "content": [
-            {
-                "header": "Contactez-nous",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            },
-            {
-                "header": "Contactez-nous",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            },
-            {
-                "header": "HÃ´tel SOUSSANA (Tunis, Sousse)",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            },
-            {
-                "header": "Contactez-nous",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            }
-        ],
-        "images": []
-    },
-    {
         "url": "https://www.soussanahotel.com/fr/gallery.html",
         "title": "Galerie de photos | HÃ´tel SOUSSANA (Tunis, Sousse)",
         "content": [
@@ -390,21 +229,6 @@
             "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/a627ec81-6f1f-49f0-a9b5-6c943fdc6c27.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600",
             "https://webbox.imgix.net/images/vxaycbqyfbycrkjc/d491472e-3973-4b7e-8561-14db600ee203.jpg?auto=format,compress&fit=crop&crop=entropy&w=750&h=600"
         ]
-    },
-    {
-        "url": "https://www.soussanahotel.com/fr/book-now.html",
-        "title": "| HÃ´tel SOUSSANA (Tunis, Sousse)",
-        "content": [
-            {
-                "header": "Contactez-nous",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            },
-            {
-                "header": "Book now",
-                "paragraph": "Avenue Taieb Mhiri, Sousse, Sousse, 4001, Tunisia"
-            }
-        ],
-        "images": []
     },
     {
         "url": "https://www.soussanahotel.com/fr/rooms/chambre-double.html",
